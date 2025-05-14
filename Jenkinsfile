@@ -22,7 +22,7 @@ pipeline {
         }
         stage('cleanup') {
           steps {
-            sh 'docker system prune -a --volumes --force --filter "label=devops-web-project-server"'
+//            sh 'docker system prune -a --volumes --force --filter "label=devops-web-project-server"'
           }
         }
         stage('build image') {
